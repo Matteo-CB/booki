@@ -10,7 +10,7 @@ html{
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
 }
-span{
+span.info-i{
     
 
     width: 20px ;
@@ -19,7 +19,7 @@ span{
     border: 1px rgba(0, 0, 0, 0.295) solid;
     margin: 0  0 30px 0;
 }
-span i{
+span.info-i i{
     padding: 10px;
    
 }
