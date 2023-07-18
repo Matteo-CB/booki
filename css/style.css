@@ -10,7 +10,11 @@ html{
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
 }
+<<<<<<< HEAD
+.info-500{
+=======
 span.info-i{
+>>>>>>> 5a8bbf8be6250bbd5bbcb95c3af789cf0f0d7fb7
     
 
     width: 20px ;
@@ -87,29 +91,14 @@ header{
     align-items: center;
     position: relative;
 }
-header::after{
-    display: none;
-    content: "";
-    position: absolute;
-    background: #00000023;
-    width: 50%;
-    height: 2px;
-    right: 0;
-    bottom: -15px;
-}
-header::before{
-    content: "";
-    display: none;
-    position: absolute;
-    background: var(--main-color);
-    width: 50%;
-    height: 2px;
-    left: 0;
-    bottom: -15px;
-}
+
 
 header img{
     height: 20px;
+}
+.acti{
+    width: 100%;
+    
 }
 
 header nav{
@@ -120,11 +109,11 @@ header nav{
     
 }
 
-.selected{
+.active:focus{
     color: var(--main-color);
     position: relative;
 }
-.selected::after{
+.active:focus:after{
     content: '';
     position: absolute;
     width: 100%;
@@ -133,6 +122,7 @@ header nav{
     left: 0;
     background: var(--main-color);
 }
+
 header a{
     font-size: 0.8rem;
     height: 100%;
@@ -499,21 +489,33 @@ footer div{
     .main-container{
         padding: 0 20px;
     }
-    .populaires-cards{
-        flex-direction: column;
-                margin: 0 auto;
-        
-        justify-content: center;
-    }
+    
     .populaires-cards .card {
         width: 400px;
         margin: 0 auto;
-        margin: 20px 0 0 0;
+        margin: 20px 5px 0 5px;
     }
     
 }
+@media screen and (max-width:817px) {
+    .populaires-cards {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .populaires-cards .card{
+        
+        width: 90%;
+    }
+}
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    .acti{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+    }
+    .selected{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+    }
     header::after{
         display: block;
     }
@@ -529,20 +531,30 @@ footer div{
     }
     header nav{
         padding: 0;
-        gap: 20px;
+        gap: 00px;
         display: grid;
-        align-items: center;
+        width: 100%;
         grid-template-columns: 50% 50%;
     }
-    header a{
-        
-    transform: translateX(50%);
-        
+   
+    .acti{
+        text-align: center;
+        padding: 5px;
+        width: 50vw;
+    }
+    .acti:active{
+        border-bottom: 1px solid #0065FC;
+    }
+    .selected:active{
+        border-bottom: 1px solid #0065FC;
     }
     .selected{
-        transform: translateX(-50%);
+        text-align: center;
+        width: 50vw;
+        transform: translateX(5%);
+        padding: 5px;
     }
-    .selected::after{
+    .active::after{
         display: none;
     }
     header img{
@@ -634,7 +646,7 @@ footer div{
         gap: 5px;}
     .filter-list li{
         margin-bottom: 15px;
-        font-size: 0.6rem;
+        font-size: 0.4rem;
     }
 
     
@@ -645,7 +657,7 @@ footer div{
     }
     
     .populaires-cards .card {
-        width: 250px;
+        width: 90%;
         margin: 0 auto;
         margin: 20px auto 0 auto;
     }
@@ -655,21 +667,16 @@ footer div{
     
     header nav{
         gap: 0;
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
     
-    
+    .acti, .selected{
+        font-size: 0.6rem;
+    }
 }
 @media (max-width: 350px) {
     
-    header a{
-        
-        transform: translateX(25%);
-            
-        }
-        .selected{
-            transform: translateX(-25%);
-        }
+    
     .populaires-cards .card {
         width: 200px;
         
