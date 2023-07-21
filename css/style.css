@@ -10,11 +10,8 @@ html{
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
 }
-<<<<<<< HEAD
-.info-500{
-=======
+
 span.info-i{
->>>>>>> 5a8bbf8be6250bbd5bbcb95c3af789cf0f0d7fb7
     
 
     width: 20px ;
@@ -24,7 +21,7 @@ span.info-i{
     margin: 0  0 30px 0;
 }
 span.info-i i{
-    padding: 10px;
+    padding: 8px;
    
 }
 .fa-solid {
@@ -646,7 +643,7 @@ footer div{
         gap: 5px;}
     .filter-list li{
         margin-bottom: 15px;
-        font-size: 0.4rem;
+        font-size: 0.6rem;
     }
 
     
